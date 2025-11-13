@@ -13,3 +13,9 @@
     -moz-appearance: textfield;
   }
 }
+
+@layer base {
+  body {
+    @apply bg-green-50 min-h-screen;
+  }
+}
