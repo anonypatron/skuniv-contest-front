@@ -3,8 +3,8 @@
 
 1. 파일 복제
 ```
-$ git clone --branch dev01 https://github.com/anonypatron/skuniv-contest.git
-$ cd skuniv-contest
+$ git clone --branch dev01 https://github.com/anonypatron/skuniv-contest-front.git
+$ cd skuniv-contest-front
 $ npm install
 ```
 
