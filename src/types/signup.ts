@@ -4,4 +4,5 @@ export interface SignupForm {
     studentId: string;
     password: string;
     email: string;
+    code: string;
 }

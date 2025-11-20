@@ -7,7 +7,8 @@ export const useLogin = () => {
 
     return useMutation({
         mutationFn: loginRequest,
-        onSuccess: () => {
+        onSuccess: (data) => {
+            localStorage.setItem('accessToken', data.accessToken);
             router('/home');
         },
         onError: (err: any) => {
