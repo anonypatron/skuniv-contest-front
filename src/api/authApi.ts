@@ -40,6 +40,7 @@ export const signupRequest = async (formData: SignupForm) => {
 
     if (!res.ok) {
         const errorData = await res.json();
+        console.error(res.status);
         throw new Error(errorData.message || '회원가입에 실패했습니다.');
     }
 };
@@ -59,19 +60,3 @@ export const requestVerificationCode = async (email: string) => {
         throw new Error(errorData.message || '인증번호를 보내는 데 실패했습니다.');
     }
 };
-
-// 인증번호 검증
-// export const verifyCode = async (email: string, code: string) => {
-//     const res = await fetch(`${API_BASE_URL}/auth/email/verify`, {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({ email, code }),
-//     });
-
-//     if (!res.ok) {
-//         const errorData = await res.json();
-//         throw new Error(errorData.message || '인증에 실패했습니다.');
-//     }
-// };

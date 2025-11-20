@@ -168,11 +168,6 @@ export default function Signup() {
                             {clientSuccess}
                         </div>
                     )}
-                    {/* {isVerified && (
-                        <div className="text-green-600 text-sm text-center font-medium bg-green-50 p-3 rounded-lg border border-green-200">
-                            이메일 인증 완료! 이제 회원가입을 완료할 수 있습니다.
-                        </div>
-                    )} */}
                     {(clientError || isError) && (
                         <div className="text-red-600 text-sm text-center font-medium bg-red-50 p-3 rounded-lg border border-red-200">
                             {clientError || error?.message}
