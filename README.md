@@ -1,7 +1,7 @@
 ### 시작하기
 ---
 
-1. 파일 복제
+1. 파일 복제(npm install 필수)
 ```
 $ git clone --branch dev01 https://github.com/anonypatron/skuniv-contest-front.git
 $ cd skuniv-contest-front
