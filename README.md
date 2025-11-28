@@ -1,27 +1,32 @@
-### 시작하기
+# 📅 학교 시간표 메이커(Contest)
+
 ---
-0. Nodejs(LTS) 설치하기
 
+- **프로젝트 개요**
+    
+    본 프로젝트는 전자컴공X소프트웨어 연합 공모전입니다. 대학교 시간표를 작성하는데 많은 시간이 걸리는 사람들이나 에브리타임과 같이 늦게 시간표가 업데이트 되는 불편한 점에서 이 프로젝트를 개발하게 되었습니다. 본인이 원하는 강의는 직접 등록하고 공강요일이나 선택 교양분야는 본인이 원하는 분야만 선택하고 원하는 학점을 입력하면 자동으로 최적의 시간표가 완성됩니다.
+    
+- 개발 기간 : 25.11.11~25.11.25
+- 개발 인원 : 4인(기획, 디자인, 프론트엔드, 백엔드)
+- 기술 스택
+    
+    
+    | 카테고리 | 기술명 | 버전 | 비고 |
+    | --- | --- | --- | --- |
+    | 🧩 Framework | Spring Boot | 3.5.7 | 백엔드 메인 프레임워크 |
+    | 🗄️ Database | PostgreSQL | 15 | 주 데이터 저장소 |
+    | 💻 Frontend | React | 19 | UI 구성 |
+    | ⚙️ Etc | Tanstack Query | 5.90.0 | 프론트엔드 서버 상태 관리 |
+- 나의 역할
+    - 프론트엔드 개발(React + Typescript)
+- 주요 기능
+    - 직접 강의 추가: 개별 강의 정보 입력 및 추가
+    - 목표 총 학점 설정: 슬라이더로 원하는 학점 설정
+    - 공강 희망 요일 선택: 빈 시간을 원하는 요일 지정
+    - 선호 교양 영역 선택: 원하는 교양 분야 우선 고려
+    - 시간표 자동 완성: 설정한 조건에 맞게 자동 구성
+    - 시간표 실시간 미리보기: 변경사항 즉시 확인
 
-1. 파일 복제(npm install 필수)
-```
-$ git clone --branch dev01 https://github.com/anonypatron/skuniv-contest-front.git
-$ cd skuniv-contest-front
-$ npm install
-```
+## 🔗 Backend Repository
+👉 https://github.com/Chungs0604/timetable-maker
 
-2. 환경변수 설정하기
-
-
-   - 루트 디렉터리(skuniv-contest) 아래에 .env파일만들기
-   - .env파일에 아래내용 복사하기
-
-``` 
-VITE_API_URL=http://localhost:8080
-```
-
-3. 실행(localhost:5173)
-
-```
-$ npm run dev
-```
